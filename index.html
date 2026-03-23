@@ -6,8 +6,16 @@
   <title>CTG-Informática</title>
   <script>
     (function () {
-      var storedTheme = localStorage.getItem('theme');
-      var systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var storedTheme = null;
+      try {
+        storedTheme = localStorage.getItem('theme');
+      } catch (e) {}
+
+      var systemDark = false;
+      try {
+        systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      } catch (e) {}
+
       if (storedTheme === 'dark' || (!storedTheme && systemDark)) {
         document.documentElement.setAttribute('data-theme', 'dark');
       }

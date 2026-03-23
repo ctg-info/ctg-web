@@ -8,11 +8,27 @@ document.addEventListener('DOMContentLoaded', () => {
   const trackedSections = Array.from(document.querySelectorAll('section[id]'));
   const hero = document.querySelector('.hero-section');
   const navbarCollapse = document.querySelector('.navbar-collapse');
-  const collapseInstance = navbarCollapse ? bootstrap.Collapse.getOrCreateInstance(navbarCollapse, { toggle: false }) : null;
+  const collapseInstance = (navbarCollapse && window.bootstrap && bootstrap.Collapse)
+    ? bootstrap.Collapse.getOrCreateInstance(navbarCollapse, { toggle: false })
+    : null;
   const themeMediaQuery = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+  const safeStorage = {
+    get(key) {
+      try {
+        return localStorage.getItem(key);
+      } catch (error) {
+        return null;
+      }
+    },
+    set(key, value) {
+      try {
+        localStorage.setItem(key, value);
+      } catch (error) {}
+    }
+  };
 
   const getInitialTheme = () => {
-    const storedTheme = localStorage.getItem('theme');
+    const storedTheme = safeStorage.get('theme');
     if (storedTheme === 'light' || storedTheme === 'dark') {
       return storedTheme;
     }
@@ -33,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     updateThemeToggleLabel(theme);
     if (persist) {
-      localStorage.setItem('theme', theme);
+      safeStorage.set('theme', theme);
     }
   };
 
@@ -49,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (themeMediaQuery && typeof themeMediaQuery.addEventListener === 'function') {
     themeMediaQuery.addEventListener('change', (event) => {
-      if (localStorage.getItem('theme')) return;
+      if (safeStorage.get('theme')) return;
       applyTheme(event.matches ? 'dark' : 'light', false);
     });
   }
