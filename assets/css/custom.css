@@ -1,5 +1,5 @@
 :root {
-  --bg: #0b1220;
+  --bg: #ffffff;
   --bg-soft: #f4f7fb;
   --card: rgba(255, 255, 255, 0.08);
   --surface: #ffffff;
@@ -9,8 +9,26 @@
   --primary: #4f7cff;
   --primary-2: #79a6ff;
   --border: rgba(15, 23, 42, 0.08);
+  --line: rgba(15, 23, 42, .10);
   --shadow: 0 20px 60px rgba(2, 8, 23, 0.16);
+  --nav-bg: rgba(8, 15, 29, 0.48);
+  --nav-bg-scrolled: rgba(8, 15, 29, 0.68);
+  --field-bg: #ffffff;
   --radius: 22px;
+}
+
+[data-theme="dark"] {
+  --bg: #0b1220;
+  --bg-soft: #101a2d;
+  --surface: #111c31;
+  --text: #e6edf8;
+  --text-soft: #a8b7d3;
+  --border: rgba(159, 184, 228, 0.18);
+  --line: rgba(159, 184, 228, 0.25);
+  --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  --nav-bg: rgba(5, 10, 20, 0.62);
+  --nav-bg-scrolled: rgba(5, 10, 20, 0.84);
+  --field-bg: #0f1a2c;
 }
 
 html {
@@ -20,7 +38,7 @@ html {
 body {
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   color: var(--text);
-  background: #fff;
+  background: var(--bg);
 }
 
 /* Narrower content width only for body sections (not navbar/hero) */
@@ -58,14 +76,18 @@ section[id] {
 }
 
 #mainNav {
-  background: rgba(8, 15, 29, 0.48);
+  background: var(--nav-bg);
   backdrop-filter: blur(12px);
   transition: background-color .2s ease, box-shadow .2s ease;
 }
 
 #mainNav.scrolled {
-  background: rgba(8, 15, 29, 0.68);
+  background: var(--nav-bg-scrolled);
   box-shadow: 0 10px 30px rgba(0,0,0,.18);
+}
+
+.theme-toggle {
+  min-width: 116px;
 }
 
 .navbar-brand {
@@ -210,6 +232,10 @@ section[id] {
   background: var(--bg-soft);
 }
 
+.bg-light {
+  background-color: var(--bg-soft) !important;
+}
+
 .section-title {
   font-size: clamp(1.9rem, 1.2rem + 1.6vw, 3rem);
   line-height: 1.15;
@@ -275,7 +301,7 @@ section[id] {
 
 .meta-list li {
   padding: .55rem 0;
-  border-top: 1px solid rgba(15,23,42,.06);
+  border-top: 1px solid var(--line);
   color: var(--text-soft);
 }
 
@@ -310,7 +336,7 @@ section[id] {
   border-radius: 0;
   display: block;
   padding: .95rem 0;
-  border-bottom: 1px solid rgba(15, 23, 42, .10);
+  border-bottom: 1px solid var(--line);
 }
 
 #publications .publication-item.is-hidden {
@@ -346,7 +372,7 @@ section[id] {
 
 #projects .project-row {
   padding: 1rem 0;
-  border-bottom: 1px solid rgba(15, 23, 42, .10);
+  border-bottom: 1px solid var(--line);
 }
 
 #projects .project-row:last-child {
@@ -370,8 +396,12 @@ section[id] {
   border-radius: 50%;
   margin: 0 auto 1rem;
   display: block;
-  border: 2px solid rgba(255, 255, 255, .9);
+  border: 2px solid rgba(255, 255, 255, .88);
   box-shadow: 0 10px 26px rgba(2, 8, 23, .14);
+}
+
+[data-theme="dark"] .team-photo {
+  border-color: rgba(168, 183, 211, .5);
 }
 
 #team .person-card {
@@ -439,12 +469,32 @@ section[id] {
 .form-control {
   border-radius: 14px;
   padding: .85rem 1rem;
-  border-color: rgba(15, 23, 42, .12);
+  border-color: var(--border);
+  background: var(--field-bg);
+  color: var(--text);
 }
 
 .form-control:focus {
   border-color: rgba(79,124,255,.65);
   box-shadow: 0 0 0 .2rem rgba(79,124,255,.12);
+  background: var(--field-bg);
+  color: var(--text);
+}
+
+.form-control::placeholder {
+  color: var(--text-soft);
+}
+
+[data-theme="dark"] .btn-outline-light {
+  color: #e6edf8;
+  border-color: rgba(230, 237, 248, .55);
+}
+
+[data-theme="dark"] .btn-outline-light:hover,
+[data-theme="dark"] .btn-outline-light:focus {
+  color: #0b1220;
+  background-color: #e6edf8;
+  border-color: #e6edf8;
 }
 
 .btn {

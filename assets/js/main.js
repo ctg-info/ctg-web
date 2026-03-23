@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const root = document.documentElement;
   const nav = document.getElementById('mainNav') || document.getElementById('navbar');
+  const themeToggle = document.getElementById('themeToggle');
   const filterInput = document.getElementById('publicationFilter') || document.getElementById('search');
   const publications = document.querySelectorAll('.publication-item');
   const navLinks = document.querySelectorAll('.navbar-collapse .nav-link');
@@ -7,6 +9,50 @@ document.addEventListener('DOMContentLoaded', () => {
   const hero = document.querySelector('.hero-section');
   const navbarCollapse = document.querySelector('.navbar-collapse');
   const collapseInstance = navbarCollapse ? bootstrap.Collapse.getOrCreateInstance(navbarCollapse, { toggle: false }) : null;
+  const themeMediaQuery = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+
+  const getInitialTheme = () => {
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      return storedTheme;
+    }
+    return themeMediaQuery && themeMediaQuery.matches ? 'dark' : 'light';
+  };
+
+  const updateThemeToggleLabel = (theme) => {
+    if (!themeToggle) return;
+    themeToggle.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+    themeToggle.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+  };
+
+  const applyTheme = (theme, persist = true) => {
+    if (theme === 'dark') {
+      root.setAttribute('data-theme', 'dark');
+    } else {
+      root.removeAttribute('data-theme');
+    }
+    updateThemeToggleLabel(theme);
+    if (persist) {
+      localStorage.setItem('theme', theme);
+    }
+  };
+
+  applyTheme(getInitialTheme(), false);
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      applyTheme(nextTheme, true);
+    });
+  }
+
+  if (themeMediaQuery && typeof themeMediaQuery.addEventListener === 'function') {
+    themeMediaQuery.addEventListener('change', (event) => {
+      if (localStorage.getItem('theme')) return;
+      applyTheme(event.matches ? 'dark' : 'light', false);
+    });
+  }
 
   const handleNavStyle = () => {
     if (!nav) return;
