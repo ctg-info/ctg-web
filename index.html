@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CTG-Informática</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav">
+
+<!-- NAVBAR -->
+<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">CTG-Informática</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="vh-100 d-flex align-items-center hero-section">
+  <div class="container">
+    <div class="hero-content-box">
+      <h1 class="display-4">CTG-Informática</h1>
+      <p class="lead">Research Group in AI, Quantum Computing and Digital Transformation</p>
+      <p>Escuela Colombiana de Ingeniería Julio Garavito</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2>About</h2>
+    <p>
+      CTG-Informática explores problems at the frontier of knowledge in computing and digital systems.
+      We work where answers are still emerging, testing bold ideas, challenging assumptions, and
+      turning uncertainty into insight.
+    </p>
+    <p>
+      Our culture is open, creative, and rigorous. We treat conjecture as a starting point,
+      experimentation as method, and error correction as a core strength. By combining research,
+      knowledge transfer, integration, and innovation, we develop solutions with global relevance
+      and practical impact in Colombia.
+    </p>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research" class="py-5 bg-light">
+  <div class="container">
+    <h2>Research Areas</h2>
+    <ul>
+      <li>Quantum Computing & Computational Theory</li>
+      <li>Artificial Intelligence & Machine Learning</li>
+      <li>Data Management & Smart Territories</li>
+      <li>Software Engineering for AI/ML</li>
+      <li>Digital Transformation</li>
+      <li>Cybersecurity (Emerging Line)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="project-list-simple">
+      <article class="project-row">
+        <h3>Development and Implementation of the ICT Platform for the Cundinamarca Agro-Industrial Technological Corridor Strategy (CTA-2) (2026)</h3>
+        <p>Contracted by the Government of Cundinamarca. Components: (1) Learning Management System (LMS), (2) digital pedagogical content, and (3) a virtual space for service promotion.</p>
+      </article>
+      <article class="project-row">
+        <h3>SISVida RAG Platform (2025-2026)</h3>
+        <p>AI-assisted platform for auditing and traceability in healthcare claims processes.</p>
+      </article>
+      <article class="project-row">
+        <h3>El Quimbo Hydropower Oxygenation Optimization (2022-2026)</h3>
+        <p>Intelligent control and sustainable technology implementation to improve dissolved oxygen processes in hydropower operations.</p>
+      </article>
+      <article class="project-row">
+        <h3>Digital Transformation of EMGESA Renewable Generation Plants (2021-2024)</h3>
+        <p>Research and development project focused on improving reliability and efficiency in operation, maintenance, and management processes for renewable generation assets.</p>
+      </article>
+      <article class="project-row">
+        <h3>Reproducibility and Knowledge Transfer in Large-Scale Scientific Experiments (2023)</h3>
+        <p>Project on reproducible computational science, distributed infrastructure, and portable execution environments for research workflows.</p>
+      </article>
+      <article class="project-row">
+        <h3>Software Repository Mining with Machine Learning (2022)</h3>
+        <p>Applied research to extract engineering insights from code and issue repositories using data analytics and machine learning methods.</p>
+      </article>
+      <article class="project-row">
+        <h3>New Paradigms for Systems-of-Systems and Smart Cities Architecture (2021-2022)</h3>
+        <p>Research on complex systems design, enterprise architecture, and knowledge-based approaches for large-scale information systems and smart territories.</p>
+      </article>
+      <article class="project-row">
+        <h3>CAP4CITY - Strengthening Governance Capacity for Smart Sustainable Cities (2018-2022)</h3>
+        <p>Erasmus+ project with international partners to develop training and governance capabilities for smart sustainable cities.</p>
+      </article>
+      <article class="project-row">
+        <h3>Reactive Middleware for Big Data Processing (2018)</h3>
+        <p>Design and development of reactive programming tools for distributed middleware handling large-scale data processing.</p>
+      </article>
+      <article class="project-row">
+        <h3>Cloud and Mobile Distributed Enterprise Architectures (2017-2018)</h3>
+        <p>Research and prototyping of architectural patterns to support enterprise solutions deployed across distributed cloud and mobile infrastructures.</p>
+      </article>
+      <article class="project-row">
+        <h3>Framework for e-Health and m-Health Service Solutions (2017)</h3>
+        <p>Framework-oriented project to accelerate design and implementation of software-based health service solutions.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications" class="py-5 bg-light">
+  <div class="container">
+    <h2>Publications (2018-Present)</h2>
+
+    <input type="text" id="publicationFilter" class="form-control mb-3" placeholder="Search publications...">
+    <div id="pubList" class="publication-list">
+      <article class="publication-item" data-keywords="array design diagrams source code repositories transfer learning 2026">
+        <div>
+          <span class="publication-year">2026</span>
+          <h3>[1] Journal</h3>
+          <p>S. Rodriguez, D. Benavides, H. Cadavid, and W. Garzon, "Classifying and mining design diagrams in source code repositories using transfer learning," <em>Array</em>, vol. 29, p. 100656, 2026.</p>
+        </div>
+        <div class="publication-venue">Array</div>
+      </article>
+      <article class="publication-item" data-keywords="ieee access hydropower digital transformation strategy 2025 doi 10.1109/access.2025.3555537">
+        <div>
+          <span class="publication-year">2025</span>
+          <h3>[2] Journal</h3>
+          <p>E. Guevara Pabon, B. Cortes Gonzalez, I. C. Duran Tovar, L. D. Benavides Navarro, and A. Marulanda Guerra, "Designing a Digital Transformation Strategy for Hydropower Generation in Colombia," <em>IEEE Access</em>, vol. 13, pp. 63815-63826, 2025, doi: 10.1109/ACCESS.2025.3555537.</p>
+        </div>
+        <div class="publication-venue">IEEE Access</div>
+      </article>
+      <article class="publication-item" data-keywords="sera 2025 quantum classical gan wasserstein conference accepted">
+        <div>
+          <span class="publication-year">2025</span>
+          <h3>[3] Conference</h3>
+          <p>J. F. Franco-Lopez, L. D. Benavides-Navarro, Y. Jarrah-Nezhad, and W. E. Garzon-Alfonso, "Generation of 3D Distributions Using Wasserstein Distance in Hybrid Quantum-Classical Generative Adversarial Networks," in <em>Proc. SERA 2025</em>, Las Vegas, USA, 2025. Accepted for publication.</p>
+        </div>
+        <div class="publication-venue">SERA 2025</div>
+      </article>
+      <article class="publication-item" data-keywords="eriac 2025 transformacion digital mantenimiento predictivo hidroelectrica conference accepted">
+        <div>
+          <span class="publication-year">2025</span>
+          <h3>[4] Conference</h3>
+          <p>E. J. Guevara Pabon, B. Cortes Gonzalez, I. C. Duran Tovar, L. D. Benavides Navarro, and A. R. Marulanda Guerra, "Beneficios de la transformacion digital aplicado al mantenimiento predictivo de unidades de generacion hidroelectrica," in <em>Proc. ERIAC 2025</em>, Ciudad del Este, Paraguay, 2025. Accepted for publication.</p>
+        </div>
+        <div class="publication-venue">ERIAC 2025</div>
+      </article>
+      <article class="publication-item" data-keywords="iceea 2025 dissolved oxygen el quimbo hydropower conference accepted">
+        <div>
+          <span class="publication-year">2025</span>
+          <h3>[5] Conference</h3>
+          <p>V. M. Hincapie Toro, J. P. Romero Sanchez, J. E. De la Calle, A. Avendano Sanchez, L. D. Benavides Navarro, and A. Marulanda Guerra, "Estimation of Dissolved Oxygen Concentration in El Quimbo Hydropower Plant," in <em>Proc. ICEEA 2025</em>, Paris, France, 2025. Accepted for publication.</p>
+        </div>
+        <div class="publication-venue">ICEEA 2025</div>
+      </article>
+      <article class="publication-item" data-keywords="renewable energy power quality journal enel hydropower e-maintenance 2024 doi 10.52152/3998">
+        <div>
+          <span class="publication-year">2024</span>
+          <h3>[6] Journal</h3>
+          <p>G. Cortes Sanchez, G. Rodriguez Gomez, E. Guevara Pabon, T. Fontani, I. Duran Tovar, L. Benavides Navarro, and A. Marulanda Guerra, "E-maintenance in hydropower energy generation: A case study of Enel Colombia," <em>Renewable Energy and Power Quality Journal</em>, pp. 105-110, 2024, doi: 10.52152/3998.</p>
+        </div>
+        <div class="publication-venue">RE&amp;PQJ</div>
+      </article>
+      <article class="publication-item" data-keywords="applied sciences twitter public services colombia temporal analysis 2023 doi 10.3390/app131810338">
+        <div>
+          <span class="publication-year">2023</span>
+          <h3>[7] Journal</h3>
+          <p>V. E. Ospina Becerra, "Perception of Service in Colombian Public Service Companies with Twitter and Descriptive Temporal Analysis," <em>Applied Sciences</em>, vol. 13, 2023, doi: 10.3390/app131810338.</p>
+        </div>
+        <div class="publication-venue">Applied Sciences</div>
+      </article>
+      <article class="publication-item" data-keywords="data strategy organizations ccis 2023 doi 10.1007/978-3-031-40942-4_11">
+        <div>
+          <span class="publication-year">2023</span>
+          <h3>[8] Conference/Book Chapter</h3>
+          <p>F. del Toro Osorio and V. E. Ospina Becerra, "Designing a Data Strategy for Organizations," in <em>Communications in Computer and Information Science</em>, vol. 1828, pp. 143-146, 2023, doi: 10.1007/978-3-031-40942-4_11.</p>
+        </div>
+        <div class="publication-venue">CCIS</div>
+      </article>
+      <article class="publication-item" data-keywords="empirical software engineering documentation as code systems of systems interface management 2023 doi 10.1007/s10664-023-10350-7">
+        <div>
+          <span class="publication-year">2023</span>
+          <h3>[9] Journal</h3>
+          <p>H. F. Cadavid Rengifo, "Improving hardware/software interface management in systems of systems through documentation as code," <em>Empirical Software Engineering</em>, vol. 28, 2023, doi: 10.1007/s10664-023-10350-7.</p>
+        </div>
+        <div class="publication-venue">Empirical Software Engineering</div>
+      </article>
+      <article class="publication-item" data-keywords="information software technology systems of systems architecting harmonization 2022 doi 10.1016/j.infsof.2022.106984">
+        <div>
+          <span class="publication-year">2022</span>
+          <h3>[10] Journal</h3>
+          <p>H. F. Cadavid Rengifo, "System and software architecting harmonization practices in ultra-large-scale systems of systems: A confirmatory case study," <em>Information and Software Technology</em>, vol. 150, 2022, doi: 10.1016/j.infsof.2022.106984.</p>
+        </div>
+        <div class="publication-venue">Inf. &amp; Soft. Tech.</div>
+      </article>
+      <article class="publication-item" data-keywords="informatics in medicine unlocked distributed genomic analyses 2022 doi 10.1016/j.imu.2022.101024">
+        <div>
+          <span class="publication-year">2022</span>
+          <h3>[11] Journal</h3>
+          <p>W. Garzon, L. Benavides, A. Gaignard, R. Redon, and M. Sudholt, "A taxonomy of tools and approaches for distributed genomic analyses," <em>Informatics in Medicine Unlocked</em>, vol. 32, p. 101024, 2022, doi: 10.1016/j.imu.2022.101024.</p>
+        </div>
+        <div class="publication-venue">IMU</div>
+      </article>
+      <article class="publication-item" data-keywords="ieee icsa 2021 systems of systems software architecture">
+        <div>
+          <span class="publication-year">2021</span>
+          <h3>[12] Conference</h3>
+          <p>H. F. Cadavid Rengifo, V. Andrikopoulos, P. Avgeriou, and C. Broekema, "System-and Software-level Architecting Harmonization Practices for Systems-of-Systems: An Exploratory Case Study on a Long-running Large-scale Scientific Instrument," in <em>Proc. IEEE ICSA</em>, 2021, pp. 13-24.</p>
+        </div>
+        <div class="publication-venue">IEEE ICSA</div>
+      </article>
+      <article class="publication-item" data-keywords="ieee access reactive real-time languages distributed semantic framework 2020">
+        <div>
+          <span class="publication-year">2020</span>
+          <h3>[13] Journal</h3>
+          <p>M. Sanabria-Ardila, L. D. Benavides-Navarro, D. Diaz-Lopez, and W. Garzon-Alfonso, "A Semantic Framework for the Design of Distributed Reactive Real-Time Languages and Applications," <em>IEEE Access</em>, vol. 8, pp. 143862-143880, 2020, doi: 10.1109/ACCESS.2020.3010697.</p>
+        </div>
+        <div class="publication-venue">IEEE Access</div>
+      </article>
+      <article class="publication-item" data-keywords="icegov smart cities knowledge creation framework 2020 conference">
+        <div>
+          <span class="publication-year">2020</span>
+          <h3>[14] Conference</h3>
+          <p>A. Ceballos, L. D. Benavides-Navarro, and V. E. Ospina, "Towards a Measuring Framework for Knowledge Creation in Smart Cities," in <em>Proc. 13th International Conference on Theory and Practice of Electronic Governance (ICEGOV 2020)</em>, Athens, Greece, 2020, pp. 646-653.</p>
+        </div>
+        <div class="publication-venue">ICEGOV</div>
+      </article>
+      <article class="publication-item" data-keywords="ccgrid distributed collaboration biomedical analyses 2019 ieee acm conference">
+        <div>
+          <span class="publication-year">2019</span>
+          <h3>[15] Conference</h3>
+          <p>F. Boujdad, A. Gaignard, M. Sudholt, W. Garzon-Alfonso, L. D. Benavides Navarro, and R. Redon, "On Distributed Collaboration for Biomedical Analyses," in <em>Proc. IEEE/ACM CCGrid</em>, 2019, pp. 611-620, doi: 10.1109/CCGRID.2019.00079.</p>
+        </div>
+        <div class="publication-venue">CCGrid</div>
+      </article>
+      <article class="publication-item" data-keywords="sensors internet of things cosmos cybersecurity 2019 doi 10.3390/s19071492">
+        <div>
+          <span class="publication-year">2019</span>
+          <h3>[16] Journal</h3>
+          <p>D. O. Diaz Lopez, "COSMOS: Collaborative, Seamless and Adaptive Sentinel for the Internet of Things," <em>Sensors</em>, vol. 19, 2019, doi: 10.3390/s19071492.</p>
+        </div>
+        <div class="publication-venue">Sensors</div>
+      </article>
+      <article class="publication-item" data-keywords="symmetry secure iot services security-oriented review platforms 2018 doi 10.3390/sym10120669">
+        <div>
+          <span class="publication-year">2018</span>
+          <h3>[17] Journal</h3>
+          <p>C. P. Santiago Cely and D. O. Diaz Lopez, "Developing Secure IoT Services: A Security-Oriented Review of IoT Platforms," <em>Symmetry</em>, vol. 10, 2018, doi: 10.3390/sym10120669.</p>
+        </div>
+        <div class="publication-venue">Symmetry</div>
+      </article>
+      <article class="publication-item" data-keywords="wireless communications mobile computing iot cyber-attacks siem 2018 doi 10.1155/2018/3029638">
+        <div>
+          <span class="publication-year">2018</span>
+          <h3>[18] Journal</h3>
+          <p>D. O. Diaz Lopez and C. P. Santiago Cely, "Shielding IoT against Cyber-attacks: An Event-based Approach Using SIEM," <em>Wireless Communications and Mobile Computing</em>, vol. 2018, 2018, doi: 10.1155/2018/3029638.</p>
+        </div>
+        <div class="publication-venue">WCMC</div>
+      </article>
+      <article class="publication-item" data-keywords="smart farming iot crop sensing data analytics ccis 2018 doi 10.1007/978-3-319-98998-3_19">
+        <div>
+          <span class="publication-year">2018</span>
+          <h3>[19] Conference/Book Chapter</h3>
+          <p>W. Garzon Alfonso and H. F. Cadavid Rengifo, "Towards a Smart Farming Platform: From IoT-Based Crop Sensing to Data Analytics," in <em>Communications in Computer and Information Science</em>, vol. 885, pp. 237-251, 2018, doi: 10.1007/978-3-319-98998-3_19.</p>
+        </div>
+        <div class="publication-venue">CCIS</div>
+      </article>
+      <article class="publication-item" data-keywords="smart territories competitiveness data use icegov 2023">
+        <div>
+          <span class="publication-year">2023</span>
+          <h3>[20] Conference/Book Chapter</h3>
+          <p>V. E. Ospina Becerra and F. del Toro Osorio, "Smart territories competitiveness based on data use," in <em>Proc. 16th International Conference on Theory and Practice of Electronic Governance (ICEGOV 2023)</em>, pp. 479-485, 2023.</p>
+        </div>
+        <div class="publication-venue">ICEGOV 2023</div>
+      </article>
+      <article class="publication-item" data-keywords="documentation as code interface control document systems of systems 2022 doi 10.1007/978-3-031-16697-6_2">
+        <div>
+          <span class="publication-year">2022</span>
+          <h3>[21] Conference/Book Chapter</h3>
+          <p>H. F. Cadavid Rengifo, "Documentation-as-Code for Interface Control Document Management in Systems of Systems: A Technical Action Research Study," in <em>Lecture Notes in Computer Science</em>, vol. 13444, pp. 19-37, 2022, doi: 10.1007/978-3-031-16697-6_2.</p>
+        </div>
+        <div class="publication-venue">LNCS</div>
+      </article>
+      <article class="publication-item" data-keywords="evaluacion percepcion servicios publicos text mining twitter 2022 doi 10.36825/1022004">
+        <div>
+          <span class="publication-year">2022</span>
+          <h3>[22] Journal</h3>
+          <p>V. E. Ospina Becerra, "Evaluacion de la percepcion de los servicios publicos en Colombia mediante text mining via Twitter," <em>Revista de Investigacion en Tecnologias de la Informacion</em>, vol. 10, no. 22, pp. 49-63, 2022, doi: 10.36825/1022004.</p>
+        </div>
+        <div class="publication-venue">RITI</div>
+      </article>
+      <article class="publication-item" data-keywords="neural network optimization fibres seismic retrofitting uhpfrc 2021">
+        <div>
+          <span class="publication-year">2021</span>
+          <h3>[23] Journal</h3>
+          <p>V. E. Ospina Becerra, "Neural network-based optimization of fibres for seismic retrofitting applications of UHPFRC," <em>European Journal of Environmental and Civil Engineering</em>, vol. 26, no. 13, pp. 6305-6333, 2021.</p>
+        </div>
+        <div class="publication-venue">EJECE</div>
+      </article>
+      <article class="publication-item" data-keywords="survey interplay software engineering systems engineering sos architecting esem 2020">
+        <div>
+          <span class="publication-year">2020</span>
+          <h3>[24] Conference</h3>
+          <p>H. F. Cadavid Rengifo, V. Andrikopoulos, P. Avgeriou, and J. Klein, "A Survey on the Interplay between Software Engineering and Systems Engineering during SoS Architecting," in <em>Proc. ACM/IEEE ESEM</em>, 2020, pp. 1-11.</p>
+        </div>
+        <div class="publication-venue">ESEM</div>
+      </article>
+      <article class="publication-item" data-keywords="collaborative consumption food delivery web mining 2019 doi 10.1016/j.jretconser.2018.05.002">
+        <div>
+          <span class="publication-year">2019</span>
+          <h3>[25] Journal</h3>
+          <p>W. Garzon Alfonso, "Evaluation of collaborative consumption of food delivery services through web mining techniques," <em>Journal of Retailing and Consumer Services</em>, 2019, doi: 10.1016/j.jretconser.2018.05.002.</p>
+        </div>
+        <div class="publication-venue">JRCS</div>
+      </article>
+      <article class="publication-item" data-keywords="reverse engineering malware 2019 doi 10.16925/2357-6014">
+        <div>
+          <span class="publication-year">2019</span>
+          <h3>[26] Journal</h3>
+          <p>D. O. Diaz Lopez, "Using Reverse Engineering to Face Malware," <em>Ingenieria Solidaria</em>, vol. 15, no. 2, pp. 1-26, 2019, doi: 10.16925/2357-6014.</p>
+        </div>
+        <div class="publication-venue">Ingenieria Solidaria</div>
+      </article>
+      <article class="publication-item" data-keywords="ontologies semantic information integration electronic medical records emrs 2018">
+        <div>
+          <span class="publication-year">2018</span>
+          <h3>[27] Journal</h3>
+          <p>V. E. Ospina Becerra and M. J. Suarez Baron, "Applying Ontologies for Semantic Information Integration on Electronic Medical Records (EMRs)," <em>International Journal of Applied Engineering Research</em>, vol. 13, pp. 12443-12448, 2018.</p>
+        </div>
+        <div class="publication-venue">IJAER</div>
+      </article>
+      <article class="publication-item" data-keywords="building malware classificators state security agencies 2018">
+        <div>
+          <span class="publication-year">2018</span>
+          <h3>[28] Journal</h3>
+          <p>C. P. Santiago Cely and D. O. Diaz Lopez, "Building malware classificators usable by State security agencies," <em>Revista ITECKNE</em>, vol. 15, pp. 107-121, 2018.</p>
+        </div>
+        <div class="publication-venue">ITECKNE</div>
+      </article>
+      <article class="publication-item" data-keywords="e-health m-health colombia antecedentes restricciones 2018">
+        <div>
+          <span class="publication-year">2018</span>
+          <h3>[29] Journal</h3>
+          <p>H. F. Cadavid Rengifo, "E-health y m-health en Colombia: antecedentes, restricciones y consideraciones para el desarrollo de nuevas tecnologias basadas en software," <em>Revista de la Escuela Colombiana de Ingenieria</em>, vol. 109, pp. 89-99, 2018.</p>
+        </div>
+        <div class="publication-venue">RECI</div>
+      </article>
+      <article class="publication-item" data-keywords="ecibot valor inteligencia artificial servicio al cliente laccei 2018">
+        <div>
+          <span class="publication-year">2018</span>
+          <h3>[30] Conference</h3>
+          <p>O. P. Alvarez Pineiro, "El valor de la Inteligencia Artificial en el Servicio al Cliente: EciBot," in <em>Proc. LACCEI</em>, 2018.</p>
+        </div>
+        <div class="publication-venue">LACCEI</div>
+      </article>
+      <article class="publication-item" data-keywords="osint cybersecurity operations colombian context sentiment analysis 2018 doi 10.14483/2322939X.13504">
+        <div>
+          <span class="publication-year">2018</span>
+          <h3>[31] Journal</h3>
+          <p>D. O. Diaz Lopez, "Open source intelligence (OSINT) as support of cybersecurity operations: use of OSINT in a Colombian context and sentiment analysis," <em>Vinculos</em>, vol. 15, pp. 195-214, 2018, doi: 10.14483/2322939X.13504.</p>
+        </div>
+        <div class="publication-venue">Vinculos</div>
+      </article>
+      <article class="publication-item" data-keywords="real-t time modularization reactive distributed applications 2018 doi 10.1007/978-3-319-98998-3_9">
+        <div>
+          <span class="publication-year">2018</span>
+          <h3>[32] Conference/Book Chapter</h3>
+          <p>W. Garzon Alfonso, L. D. Benavides Navarro, and D. O. Diaz Lopez, "REAL-T: Time Modularization in Reactive Distributed Applications," in <em>Communications in Computer and Information Science</em>, vol. 885, pp. 113-127, 2018, doi: 10.1007/978-3-319-98998-3_9.</p>
+        </div>
+        <div class="publication-venue">CCIS</div>
+      </article>
+      <article class="publication-item" data-keywords="real-time semantics distributed event-based mop language 2018 doi 10.1007/978-3-030-02852-7_20">
+        <div>
+          <span class="publication-year">2018</span>
+          <h3>[33] Conference/Book Chapter</h3>
+          <p>W. Garzon Alfonso, L. D. Benavides Navarro, and M. Sanabria Ardila, "Towards Real-Time Semantics for a Distributed Event-Based MOP Language," in <em>New Trends in Model and Data Engineering</em>, pp. 231-243, 2018, doi: 10.1007/978-3-030-02852-7_20.</p>
+        </div>
+        <div class="publication-venue">NTMDE</div>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="py-5">
+  <div class="container">
+    <h2>Team</h2>
+    <div class="row g-5 team-grid">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <article class="person-card h-100">
+          <img class="team-photo" src="https://ldbn.is.escuelaing.edu.co/images/FotoLuisDanielBenavidesNavarro.jpg" alt="Luis Daniel Benavides Navarro">
+          <h3>Luis Daniel Benavides Navarro</h3>
+          <p class="role">Group Lead</p>
+          <p><a href="https://ldbn.is.escuelaing.edu.co" target="_blank" rel="noopener noreferrer">Official profile</a></p>
+        </article>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <article class="person-card h-100">
+          <img class="team-photo" src="https://escuelaing.s3.amazonaws.com/production/images/Foto_wega_2024_1.2e16d0ba.fill-440x440.jpg" alt="Wilmer Edicson Garzon Alfonso">
+          <h3>Wilmer Edicson Garzon Alfonso</h3>
+          <p class="role">Researcher</p>
+          <p><a href="https://www.escuelaing.edu.co/es/personal/wilmer-edicson-garzon-alfonso/" target="_blank" rel="noopener noreferrer">Official profile</a></p>
+        </article>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <article class="person-card h-100">
+          <img class="team-photo" src="https://escuelaing.s3.amazonaws.com/production/images/Claudia_Patricia_Santiago_Cely.2e16d0ba.fill-440x440.jpg" alt="Claudia Patricia Santiago Cely">
+          <h3>Claudia Patricia Santiago Cely</h3>
+          <p class="role">Researcher</p>
+          <p><a href="https://www.escuelaing.edu.co/es/personal/claudia-patricia-santiago-cely/" target="_blank" rel="noopener noreferrer">Official profile</a></p>
+        </article>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <article class="person-card h-100">
+          <img class="team-photo" src="https://escuelaing.s3.amazonaws.com/production/images/20634018.2e16d0ba.fill-440x440_mztvldo.jpg" alt="Claudia Patricia Castaneda Bermudez">
+          <h3>Claudia Patricia Castaneda Bermudez</h3>
+          <p class="role">Researcher</p>
+          <p><a href="https://www.escuelaing.edu.co/es/personal/claudia-patricia-castaneda-bermudez/" target="_blank" rel="noopener noreferrer">Official profile</a></p>
+        </article>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <article class="person-card h-100">
+          <img class="team-photo" src="https://escuelaing.s3.amazonaws.com/production/images/79266438.2e16d0ba.fill-440x440_wfJsyzx.jpg" alt="Gerardo Ospina Hernandez">
+          <h3>Gerardo Ospina</h3>
+          <p class="role">Researcher</p>
+          <p><a href="https://www.escuelaing.edu.co/es/personal/gerardo-ospina-hernandez/" target="_blank" rel="noopener noreferrer">Official profile</a></p>
+        </article>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <article class="person-card h-100">
+          <img class="team-photo" src="https://escuelaing.s3.amazonaws.com/production/images/victoria_ospina-peq.2e16d0ba.fill-440x440.jpg" alt="Victoria Eugenia Ospina Becerra">
+          <h3>Victoria Eugenia Ospina</h3>
+          <p class="role">Researcher</p>
+          <p><a href="https://www.escuelaing.edu.co/es/personal/victoria-eugenia-ospina-becerra/" target="_blank" rel="noopener noreferrer">Official profile</a></p>
+        </article>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <article class="person-card h-100">
+          <img class="team-photo" src="https://escuelaing.s3.amazonaws.com/production/images/39543222_Foto.2e16d0ba.fill-440x440_dcbmW8q.jpg" alt="Fabiola del Toro Osorio">
+          <h3>Fabiola del Toro</h3>
+          <p class="role">Researcher</p>
+          <p><a href="https://www.escuelaing.edu.co/es/personal/fabiola-del-toro-osorio/" target="_blank" rel="noopener noreferrer">Official profile</a></p>
+        </article>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <article class="person-card h-100">
+          <img class="team-photo" src="https://escuelaing.s3.amazonaws.com/production/images/Rodrigo_Gualtero.2e16d0ba.fill-440x440.jpg" alt="Rodrigo Humberto Gualtero Martinez">
+          <h3>Rodrigo Gualtero</h3>
+          <p class="role">Researcher</p>
+          <p><a href="https://www.escuelaing.edu.co/es/personal/rodrigo-humberto-gualtero-martinez/" target="_blank" rel="noopener noreferrer">Official profile</a></p>
+        </article>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <article class="person-card h-100">
+          <img class="team-photo" src="https://escuelaing.s3.amazonaws.com/production/images/JUAN_FELIPE_MORA_QUINTERO.2e16d0ba.fill-440x440.jpg" alt="Juan Felipe Mora Quintero">
+          <h3>Juan Felipe Mora</h3>
+          <p class="role">Researcher</p>
+          <p><a href="https://www.escuelaing.edu.co/es/personal/juan-felipe-mora-quintero/" target="_blank" rel="noopener noreferrer">Official profile</a></p>
+        </article>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <article class="person-card h-100">
+          <img class="team-photo" src="https://escuelaing.s3.amazonaws.com/production/images/1075209493.2e16d0ba.fill-440x440.jpg" alt="Ana Maria Gomez Lamus">
+          <h3>Ana Maria Gomez Lamus</h3>
+          <p class="role">Researcher</p>
+          <p><a href="https://www.escuelaing.edu.co/es/personal/ana-maria-gomez-lamus/" target="_blank" rel="noopener noreferrer">Official profile</a></p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>Email: luis.benavides@escuelaing.edu.co</p>
+    <p>Faculty of Systems Engineering<br>
+    Escuela Colombiana de Ingenieria Julio Garavito<br>
+    ------------------<br>
+    PBX: (57-1) 6683600 Ext. 262<br>
+    Autopista Norte AK 45 No. 205-59<br>
+    Block B, second floor<br>
+    Bogota, D.C., Colombia</p>
+  </div>
+</section>
+
+<footer class="bg-dark text-white text-center p-3">
+  <p>© 2026 CTG-Informática</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

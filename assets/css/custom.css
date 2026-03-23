@@ -1,0 +1,506 @@
+:root {
+  --bg: #0b1220;
+  --bg-soft: #f4f7fb;
+  --card: rgba(255, 255, 255, 0.08);
+  --surface: #ffffff;
+  --text: #0f172a;
+  --text-soft: #475569;
+  --white-soft: rgba(255,255,255,.78);
+  --primary: #4f7cff;
+  --primary-2: #79a6ff;
+  --border: rgba(15, 23, 42, 0.08);
+  --shadow: 0 20px 60px rgba(2, 8, 23, 0.16);
+  --radius: 22px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text);
+  background: #fff;
+}
+
+/* Narrower content width only for body sections (not navbar/hero) */
+#about .container,
+#research .container,
+#projects .container,
+#publications .container,
+#team .container,
+#contact .container {
+  max-width: 900px;
+}
+
+@media (min-width: 1200px) {
+  #about .container,
+  #research .container,
+  #projects .container,
+  #publications .container,
+  #team .container,
+  #contact .container {
+    max-width: 800px;
+  }
+}
+
+.py-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.section-anchor {
+  scroll-margin-top: 84px;
+}
+
+section[id] {
+  scroll-margin-top: 120px;
+}
+
+#mainNav {
+  background: rgba(8, 15, 29, 0.48);
+  backdrop-filter: blur(12px);
+  transition: background-color .2s ease, box-shadow .2s ease;
+}
+
+#mainNav.scrolled {
+  background: rgba(8, 15, 29, 0.68);
+  box-shadow: 0 10px 30px rgba(0,0,0,.18);
+}
+
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: .75rem;
+  font-weight: 700;
+}
+
+.brand-mark {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--primary), #8cc7ff);
+  color: white;
+  font-size: .85rem;
+}
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    url("../img/bg-masthead.jpg") center / cover no-repeat,
+    linear-gradient(180deg, #0f2442 0%, #173861 100%);
+  color: white;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,.95), rgba(0,0,0,.35));
+}
+
+.eyebrow,
+.section-tag,
+.project-label,
+.panel-badge,
+.publication-year {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: .84rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.eyebrow,
+.panel-badge {
+  color: #a8c2ff;
+}
+
+.section-tag,
+.publication-year,
+.project-label {
+  color: var(--primary);
+}
+
+.hero-section .lead {
+  max-width: 52rem;
+  color: var(--white-soft) !important;
+}
+
+.hero-content-box {
+  display: inline-block;
+  max-width: 760px;
+  padding: 1.4rem 1.6rem;
+  border-radius: 18px;
+  background: rgba(8, 16, 30, .42);
+  border: 1px solid rgba(255, 255, 255, .24);
+  box-shadow: 0 14px 36px rgba(2, 8, 23, .22);
+  backdrop-filter: blur(3px);
+}
+
+.hero-content-box p:last-child {
+  margin-bottom: 0;
+}
+
+.glass-card,
+.metric-card,
+.info-card,
+.project-card,
+.person-card,
+.contact-card,
+.contact-form-card,
+.publication-item {
+  border-radius: var(--radius);
+}
+
+.glass-card {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
+  box-shadow: 0 24px 80px rgba(0,0,0,.22);
+  padding: 2rem;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  position: relative;
+  padding-left: 1.6rem;
+  margin-bottom: 1rem;
+  color: rgba(255,255,255,.85);
+}
+
+.feature-list li::before {
+  content: "";
+  width: .6rem;
+  height: .6rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), #96c4ff);
+  position: absolute;
+  left: 0;
+  top: .45rem;
+}
+
+.hero-metrics .metric-card {
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.10);
+  padding: 1.1rem 1rem;
+  text-align: left;
+}
+
+.metric-card strong {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.metric-card span {
+  color: rgba(255,255,255,.72);
+  font-size: .95rem;
+}
+
+.bg-soft {
+  background: var(--bg-soft);
+}
+
+.section-title {
+  font-size: clamp(1.9rem, 1.2rem + 1.6vw, 3rem);
+  line-height: 1.15;
+  font-weight: 800;
+  margin-top: .75rem;
+  margin-bottom: 0;
+}
+
+.section-text {
+  color: var(--text-soft);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.info-card,
+.project-card,
+.person-card,
+.contact-card,
+.contact-form-card,
+.publication-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.info-card,
+.project-card,
+.person-card {
+  padding: 1.75rem;
+}
+
+.info-card h3,
+.project-card h3,
+.person-card h3,
+.publication-item h3 {
+  font-size: 1.15rem;
+  margin-bottom: .85rem;
+}
+
+.info-card p,
+.project-card p,
+.person-card p,
+.contact-card p,
+.publication-item p {
+  color: var(--text-soft);
+  margin-bottom: 0;
+}
+
+.icon-dot {
+  width: .95rem;
+  height: .95rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--primary), #8ecbff);
+  box-shadow: 0 0 0 8px rgba(79, 124, 255, .10);
+}
+
+.meta-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.2rem 0 0;
+}
+
+.meta-list li {
+  padding: .55rem 0;
+  border-top: 1px solid rgba(15,23,42,.06);
+  color: var(--text-soft);
+}
+
+.publication-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.publication-item {
+  padding: 1.35rem 1.45rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.publication-venue {
+  white-space: nowrap;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* Publications as bibliography-style list (no cards) */
+#publications .publication-list {
+  display: block;
+}
+
+#publications .publication-item {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  display: block;
+  padding: .95rem 0;
+  border-bottom: 1px solid rgba(15, 23, 42, .10);
+}
+
+#publications .publication-item.is-hidden {
+  display: none;
+}
+
+#publications .publication-item:last-child {
+  border-bottom: 0;
+}
+
+#publications .publication-item h3 {
+  font-size: 1rem;
+  margin-bottom: .45rem;
+}
+
+#publications .publication-year {
+  margin-bottom: .4rem;
+}
+
+#publications .publication-venue {
+  display: block;
+  margin-top: .35rem;
+  font-size: .9rem;
+  font-weight: 600;
+  color: var(--text-soft);
+  white-space: normal;
+}
+
+/* Projects as list (no cards) */
+#projects .project-list-simple {
+  display: block;
+}
+
+#projects .project-row {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(15, 23, 42, .10);
+}
+
+#projects .project-row:last-child {
+  border-bottom: 0;
+}
+
+#projects .project-row h3 {
+  font-size: 1.05rem;
+  margin-bottom: .45rem;
+}
+
+#projects .project-row p {
+  margin: 0;
+  color: var(--text-soft);
+}
+
+.team-photo {
+  width: 168px;
+  height: 168px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  display: block;
+  border: 2px solid rgba(255, 255, 255, .9);
+  box-shadow: 0 10px 26px rgba(2, 8, 23, .14);
+}
+
+#team .person-card {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+  text-align: center;
+}
+
+#team .person-card h3 {
+  font-size: 1.02rem;
+  margin-bottom: .35rem;
+}
+
+#team .person-card .role {
+  margin-bottom: .5rem;
+}
+
+#team .team-grid {
+  row-gap: 2rem !important;
+}
+
+.person-card .role {
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: .75rem;
+}
+
+.avatar-placeholder {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #dce8ff, #edf4ff);
+  color: var(--primary);
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.cta-banner {
+  background: linear-gradient(135deg, #1d4ed8, #0f3ca5 60%, #17307c);
+  color: white;
+  border-radius: calc(var(--radius) + 6px);
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 25px 70px rgba(15, 60, 165, 0.35);
+}
+
+.cta-banner .section-title,
+.cta-banner .section-tag,
+.cta-banner .section-text {
+  color: white;
+}
+
+.contact-card,
+.contact-form-card {
+  padding: 1.75rem;
+}
+
+.form-control {
+  border-radius: 14px;
+  padding: .85rem 1rem;
+  border-color: rgba(15, 23, 42, .12);
+}
+
+.form-control:focus {
+  border-color: rgba(79,124,255,.65);
+  box-shadow: 0 0 0 .2rem rgba(79,124,255,.12);
+}
+
+.btn {
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), #2f67ff);
+  border-color: var(--primary);
+}
+
+.site-footer {
+  background: #07101d;
+  color: rgba(255,255,255,.76);
+}
+
+.back-to-top {
+  color: #b9ccff;
+}
+
+.publication-item.is-hidden {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .py-6 {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .cta-banner,
+  .publication-item {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-content-box {
+    padding: 1rem 1rem;
+    border-radius: 14px;
+  }
+
+  .glass-card,
+  .hero-metrics .metric-card,
+  .info-card,
+  .project-card,
+  .person-card,
+  .contact-card,
+  .contact-form-card,
+  .publication-item,
+  .cta-banner {
+    border-radius: 18px;
+  }
+
+  .hero-section .display-4 {
+    font-size: 2.35rem;
+  }
+}
