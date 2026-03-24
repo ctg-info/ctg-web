@@ -1,26 +1,66 @@
-# One-Page Template for a Research Group
+# CTG-Informática Website
 
-This template is built for GitHub Pages using:
+Official one-page website for the CTG-Informática research group (Escuela Colombiana de Ingeniería Julio Garavito).
 
-- HTML
-- Bootstrap 5 via CDN
-- Custom CSS
-- Minimal vanilla JavaScript
+## Live Site
 
-## Structure
+- GitHub Pages: <https://ctg-info.github.io/ctg-web/>
 
-- `index.html`: main page file
-- `assets/css/custom.css`: site styles
-- `assets/js/main.js`: lightweight navbar behavior and publication filtering
+## Tech Stack
 
-## Suggested edits
+- Static HTML (`index.html`)
+- Bootstrap 5 (CDN)
+- Custom CSS (`assets/css/custom.css`)
+- Vanilla JavaScript (`assets/js/main.js`)
 
-1. Replace placeholder text in `index.html`.
-2. Update names, projects, publications, and team members.
-3. Adjust colors in `assets/css/custom.css` for your institutional identity.
-4. Upload this directory to a repository and enable GitHub Pages.
+## Current Features
+
+- Single-page sections: Home, About, Research, Projects, Publications, Team, Contact
+- Rotating hero background images
+- Publications search/filter
+- Active navbar section highlighting on scroll
+- Responsive team grid with circular portraits
+- Dark mode toggle with:
+  - local preference persistence
+  - system preference fallback (`prefers-color-scheme`)
+  - resilient runtime handling for restricted storage/CDN edge cases
+
+## Repository Structure
+
+- `index.html` - Main page content and section layout
+- `assets/css/custom.css` - Theme variables, layout, responsive styles, dark mode
+- `assets/js/main.js` - Navbar behavior, publication filtering, hero rotation, theme toggle logic
+- `assets/img/` - Hero and team images
+
+## Local Preview
+
+From the repository root:
+
+```bash
+python3 -m http.server 8080
+```
+
+Then open: <http://localhost:8080>
+
+## Deployment (GitHub Pages)
+
+Repository: `ctg-info/ctg-web`
+
+1. Go to `Settings` -> `Pages`
+2. Source: `Deploy from a branch`
+3. Branch: `main`
+4. Folder: `/ (root)`
+5. Save
+
+## Update Workflow
+
+1. Edit content in `index.html`
+2. Adjust styling in `assets/css/custom.css`
+3. Update interactions in `assets/js/main.js`
+4. Commit and push to `main`
+5. Wait for GitHub Pages to publish changes
 
 ## Notes
 
-- The contact form is visual only. In GitHub Pages, it is usually connected to an external service.
-- If you want less JavaScript, you can remove the publication filter and keep only Bootstrap.
+- Some team photos originally came from external sources; local assets are preferred for reliability.
+- This project is static-only. There is no backend service.
