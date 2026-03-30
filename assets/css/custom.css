@@ -371,7 +371,9 @@ section[id] {
 
 #theses .thesis-list {
   margin-top: 1rem;
-  padding-left: 1.25rem;
+  padding-left: 0;
+  margin-left: 0;
+  list-style-position: inside;
 }
 
 #theses .thesis-list li {
@@ -392,7 +394,9 @@ section[id] {
 #doctoral .doctoral-list {
   margin-top: .75rem;
   margin-bottom: 1.25rem;
-  padding-left: 1.25rem;
+  padding-left: 0;
+  margin-left: 0;
+  list-style-position: inside;
 }
 
 #doctoral h3 {
