@@ -46,6 +46,8 @@ body {
 #research .container,
 #projects .container,
 #publications .container,
+#doctoral .container,
+#theses .container,
 #team .container,
 #contact .container {
   max-width: 900px;
@@ -56,6 +58,8 @@ body {
   #research .container,
   #projects .container,
   #publications .container,
+  #doctoral .container,
+  #theses .container,
   #team .container,
   #contact .container {
     max-width: 800px;
@@ -363,6 +367,48 @@ section[id] {
   font-weight: 600;
   color: var(--text-soft);
   white-space: normal;
+}
+
+#theses .thesis-list {
+  margin-top: 1rem;
+  padding-left: 1.25rem;
+}
+
+#theses .thesis-list li {
+  padding: .85rem 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--text-soft);
+}
+
+#theses .thesis-list li:last-child {
+  border-bottom: 0;
+}
+
+#theses .thesis-list a {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+#doctoral .doctoral-list {
+  margin-top: .75rem;
+  margin-bottom: 1.25rem;
+  padding-left: 1.25rem;
+}
+
+#doctoral h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 1.1rem;
+  margin-bottom: .55rem;
+}
+
+#doctoral .doctoral-list li {
+  margin-bottom: .5rem;
+  color: var(--text-soft);
+}
+
+#doctoral p {
+  color: var(--text-soft);
 }
 
 /* Projects as list (no cards) */
