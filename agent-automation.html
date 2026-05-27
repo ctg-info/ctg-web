@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CTG-Informática | Agentic Process Automation</title>
+  <script>
+    (function () {
+      var storedTheme = null;
+      try { storedTheme = localStorage.getItem('theme'); } catch (e) {}
+      var systemDark = false;
+      try { systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches; } catch (e) {}
+      if (storedTheme === 'dark' || (!storedTheme && systemDark)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav">
+<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">CTG-Informática</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+        <li class="nav-item"><a class="nav-link" href="#maturity">Maturity</a></li>
+        <li class="nav-item"><a class="nav-link" href="#use-cases">Use Cases</a></li>
+        <li class="nav-item"><a class="nav-link" href="#delivery">Delivery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <button id="themeToggle" class="btn btn-sm btn-outline-light theme-toggle ms-lg-3 mt-3 mt-lg-0" type="button" aria-label="Toggle color theme">Dark mode</button>
+    </div>
+  </div>
+</nav>
+
+<section id="overview" class="vh-100 d-flex align-items-center solution-hero agent-automation-hero">
+  <div class="container">
+    <div class="solution-hero-copy">
+      <p class="solution-kicker">CTG-Informática Services</p>
+      <h1 class="display-4">Agentic Process Automation</h1>
+      <p class="lead">Put governed AI agents to work across real business processes.</p>
+      <p>We help organizations automate knowledge-intensive workflows with retrieval, decision support, human oversight, and production-grade traceability.</p>
+      <div class="solution-proof-strip">
+        <span>Faster operations</span>
+        <span>Policy-aware execution</span>
+        <span>Audit-ready automation</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how-it-works" class="py-5">
+  <div class="container services-container">
+    <p class="solution-eyebrow">How it works</p>
+    <h2>From knowledge to governed action</h2>
+    <p class="solution-section-lead">Agentic Process Automation uses AI agents to help complete business workflows that require information retrieval, rule checking, decisions, and coordination across systems. It is not just a chatbot: a chatbot answers a question; an agentic workflow helps move a process forward.</p>
+    <div class="agent-flow" aria-label="Agentic process automation flow">
+      <div class="agent-flow-step">
+        <span class="agent-flow-index">01</span>
+        <h3>Intake</h3>
+        <p>Capture requests, documents, tickets, or operational events.</p>
+      </div>
+      <div class="agent-flow-step">
+        <span class="agent-flow-index">02</span>
+        <h3>Retrieve</h3>
+        <p>Ground responses in approved knowledge, data, policies, and APIs.</p>
+      </div>
+      <div class="agent-flow-step">
+        <span class="agent-flow-index">03</span>
+        <h3>Reason</h3>
+        <p>Apply business rules, confidence thresholds, and escalation criteria.</p>
+      </div>
+      <div class="agent-flow-step">
+        <span class="agent-flow-index">04</span>
+        <h3>Act</h3>
+        <p>Execute approved steps in enterprise systems with audit trails.</p>
+      </div>
+    </div>
+    <div class="orchestration-example">
+      <p class="solution-row-meta">Example orchestration</p>
+      <h3>Agents coordinate the process, people keep control</h3>
+      <div class="orchestration-diagram" aria-label="Example process with orchestrated agents collaborating with humans">
+        <div class="orchestration-hub">Agent Orchestration</div>
+        <div class="orchestration-track">
+          <article class="orchestration-node request">
+            <span>01</span>
+            <strong>Business request</strong>
+            <small>Email, document, form, ticket, or operational event.</small>
+          </article>
+          <article class="orchestration-node agent">
+            <span>02</span>
+            <strong>Intake agent</strong>
+            <small>Classifies intent and extracts the needed context.</small>
+          </article>
+          <article class="orchestration-node agent">
+            <span>03</span>
+            <strong>Retrieval agent</strong>
+            <small>Finds trusted knowledge, data, and prior cases.</small>
+          </article>
+          <article class="orchestration-node agent">
+            <span>04</span>
+            <strong>Policy agent</strong>
+            <small>Checks rules, thresholds, and compliance constraints.</small>
+          </article>
+          <article class="orchestration-node human">
+            <span>05</span>
+            <strong>Human approval</strong>
+            <small>Reviews high-risk, uncertain, or exceptional cases.</small>
+          </article>
+          <article class="orchestration-node system">
+            <span>06</span>
+            <strong>System execution</strong>
+            <small>Updates ERP, CRM, helpdesk, databases, or APIs.</small>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="maturity" class="py-5 bg-light">
+  <div class="container services-container">
+    <p class="solution-eyebrow">Maturity model</p>
+    <h2>Move from assistance to governed autonomy</h2>
+    <p class="solution-section-lead">Most organizations should not start with full autonomy. We help identify the safest business step, prove value, and scale only when the process, controls, and people are ready.</p>
+    <figure class="solution-figure solution-figure-wide">
+      <a href="assets/img/solutions/agentic-maturity-model.png" target="_blank" rel="noopener">
+        <img class="solution-image" src="assets/img/solutions/agentic-maturity-model.png" alt="Agentic process automation maturity model">
+      </a>
+      <figcaption>A practical roadmap for selecting the right first pilot and avoiding over-engineered AI initiatives. Click the image to open it full size.</figcaption>
+    </figure>
+    <div class="maturity-ladder">
+      <article class="maturity-row">
+        <h3><span>01</span> Assisted Knowledge</h3>
+        <p>AI retrieves and summarizes trusted internal information.</p>
+      </article>
+      <article class="maturity-row">
+        <h3><span>02</span> Guided Workflows</h3>
+        <p>AI supports task execution with recommendations and next steps.</p>
+      </article>
+      <article class="maturity-row">
+        <h3><span>03</span> Governed Agents</h3>
+        <p>Specialized agents operate with policies, audit trails, and escalation rules.</p>
+      </article>
+      <article class="maturity-row">
+        <h3><span>04</span> Autonomous Operations</h3>
+        <p>Agents coordinate across systems under measurable controls and human oversight.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container services-container">
+    <p class="solution-eyebrow">Business impact</p>
+    <h2>Designed for measurable operational value</h2>
+    <p class="solution-section-lead">The goal is not to add AI decoration to an existing workflow. The goal is to remove friction from work that depends on documents, policies, systems, and expert judgment.</p>
+    <div class="outcome-strip">
+      <div class="outcome-metric">
+        <strong>Speed</strong>
+        <span>Shorter turnaround in repetitive, multi-step processes.</span>
+      </div>
+      <div class="outcome-metric">
+        <strong>Consistency</strong>
+        <span>Fewer manual variations through policy-aware execution.</span>
+      </div>
+      <div class="outcome-metric">
+        <strong>Trust</strong>
+        <span>Traceable actions, rationale, and escalation history.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="use-cases" class="py-5 bg-light">
+  <div class="container services-container">
+    <p class="solution-eyebrow">Priority use cases</p>
+    <h2>Where to start</h2>
+    <div class="solution-row-list">
+      <article class="solution-row">
+        <div>
+          <p class="solution-row-meta">Customer operations</p>
+          <h3>Resolve requests with context</h3>
+        </div>
+        <p>Agents classify requests, retrieve account or case context, recommend the next action, and escalate sensitive cases to people.</p>
+      </article>
+      <article class="solution-row">
+        <div>
+          <p class="solution-row-meta">Finance and back office</p>
+          <h3>Automate validation-heavy routines</h3>
+        </div>
+        <p>Document checks, policy compliance, routing decisions, and exception handling become faster without losing evidence or control.</p>
+      </article>
+      <article class="solution-row">
+        <div>
+          <p class="solution-row-meta">IT and shared services</p>
+          <h3>Coordinate ticket triage and execution</h3>
+        </div>
+        <p>Agents combine knowledge-base retrieval, service rules, and tool execution to reduce load on expert teams.</p>
+      </article>
+      <article class="solution-row">
+        <div>
+          <p class="solution-row-meta">Knowledge-intensive teams</p>
+          <h3>Turn scattered knowledge into guided work</h3>
+        </div>
+        <p>Policies, procedures, reports, and databases become operational assets that support daily decisions instead of passive repositories.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="capabilities" class="py-5">
+  <div class="container services-container">
+    <p class="solution-eyebrow">What we build</p>
+    <h2>Production capabilities, not one-off demos</h2>
+    <div class="solution-row-list">
+      <article class="solution-row compact">
+        <h3>Knowledge and RAG layer</h3>
+        <p>Connect approved documents, databases, and APIs so agents answer and act using your real organizational context.</p>
+      </article>
+      <article class="solution-row compact">
+        <h3>Agent orchestration</h3>
+        <p>Design specialized agents for intake, retrieval, reasoning, compliance checks, execution, and escalation.</p>
+      </article>
+      <article class="solution-row compact">
+        <h3>Governance controls</h3>
+        <p>Define policy guardrails, confidence thresholds, human-in-the-loop rules, logging, and audit evidence.</p>
+      </article>
+      <article class="solution-row compact">
+        <h3>Enterprise integration</h3>
+        <p>Connect with ERP, CRM, helpdesk, databases, and custom applications through secure interfaces.</p>
+      </article>
+      <article class="solution-row compact">
+        <h3>Operational monitoring</h3>
+        <p>Measure quality, failure modes, adoption, latency, and business outcomes after deployment.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="production" class="py-5 bg-light">
+  <div class="container services-container">
+    <p class="solution-eyebrow">Production readiness</p>
+    <h2>Built around people, risk, and adoption</h2>
+    <div class="production-grid">
+      <article>
+        <h3>Human oversight where it matters</h3>
+        <p>High-risk or low-confidence cases are routed to people with the evidence needed to decide quickly.</p>
+      </article>
+      <article>
+        <h3>Explainable process behavior</h3>
+        <p>Each recommendation or action keeps a trail of retrieved knowledge, applied rules, and execution results.</p>
+      </article>
+      <article>
+        <h3>Designed with your teams</h3>
+        <p>The solution improves the way people work instead of replacing organizational knowledge with a black box.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="delivery" class="py-5">
+  <div class="container services-container">
+    <p class="solution-eyebrow">Delivery model</p>
+    <h2>From opportunity to production</h2>
+    <div class="phase-list">
+      <article class="phase-row">
+        <span>01</span>
+        <div>
+          <h3>Opportunity framing</h3>
+          <p>Select the process, success metrics, risk level, knowledge sources, and operational constraints.</p>
+        </div>
+      </article>
+      <article class="phase-row">
+        <span>02</span>
+        <div>
+          <h3>Architecture and prototype</h3>
+          <p>Design the agent workflow, retrieval strategy, integrations, guardrails, and user interaction points.</p>
+        </div>
+      </article>
+      <article class="phase-row">
+        <span>03</span>
+        <div>
+          <h3>Pilot in real operations</h3>
+          <p>Validate quality, cost, latency, user experience, and exception handling with real cases.</p>
+        </div>
+      </article>
+      <article class="phase-row">
+        <span>04</span>
+        <div>
+          <h3>Production and capability transfer</h3>
+          <p>Harden, deploy, monitor, document, and transfer practices so the organization can evolve the system.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="engagement" class="py-5 bg-light">
+  <div class="container services-container">
+    <p class="solution-eyebrow">Engagement formats</p>
+    <h2>Start small, scale deliberately</h2>
+    <div class="solution-row-list">
+      <article class="solution-row">
+        <div>
+          <p class="solution-row-meta">2 to 4 weeks</p>
+          <h3>Automation opportunity sprint</h3>
+        </div>
+        <p>Map candidate workflows, assess data readiness, estimate value, and choose a realistic first pilot.</p>
+      </article>
+      <article class="solution-row">
+        <div>
+          <p class="solution-row-meta">Pilot to production</p>
+          <h3>First governed agent workflow</h3>
+        </div>
+        <p>Build a focused process automation solution and validate it with business users before scaling.</p>
+      </article>
+      <article class="solution-row">
+        <div>
+          <p class="solution-row-meta">Scale-up</p>
+          <h3>Agent platform advisory</h3>
+        </div>
+        <p>Define reusable patterns, governance, architecture, and internal skills for a broader automation portfolio.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="py-5 solution-contact-section">
+  <div class="container services-container">
+    <div class="contact-note contact-note-final">
+      <p class="solution-eyebrow">Next step</p>
+      <h2>Discuss a process worth automating</h2>
+      <p>Bring one process that is slow, document-heavy, policy-sensitive, or dependent on expert judgment. We can help decide whether agentic automation is the right tool.</p>
+      <p><a href="mailto:luis.benavides@escuelaing.edu.co?subject=Agentic%20Process%20Automation%20Consulting">luis.benavides@escuelaing.edu.co</a></p>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-white text-center p-3">
+  <p>© 2026 CTG-Informática</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
