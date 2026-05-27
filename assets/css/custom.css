@@ -115,6 +115,7 @@ section[id] {
 .hero-section {
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
   background:
     url("../img/bg-masthead.jpg") center / cover no-repeat,
     linear-gradient(180deg, #0f2442 0%, #173861 100%);
@@ -461,6 +462,7 @@ section[id] {
   position: relative;
   min-height: 92vh;
   overflow: hidden;
+  box-sizing: border-box;
   color: #fff;
   background-position: center;
   background-size: cover;
@@ -1368,5 +1370,36 @@ section[id] {
     margin-left: 0;
     margin-bottom: 1rem;
     opacity: .82;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 575px) {
+  .hero-section.vh-100,
+  .solution-hero.vh-100 {
+    height: auto !important;
+    min-height: 100svh;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    align-items: flex-start !important;
+  }
+
+  .hero-institutional-mark {
+    width: min(34vw, 170px);
+    margin-left: 0;
+    margin-bottom: .75rem;
+  }
+
+  .hero-content-box,
+  .solution-hero-copy {
+    max-width: 660px;
+  }
+
+  .hero-section .display-4,
+  .solution-hero .display-4 {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+
+  .solution-proof-strip {
+    margin-top: .85rem;
   }
 }
