@@ -121,6 +121,11 @@ section[id] {
   color: white;
 }
 
+.hero-section > .container {
+  position: relative;
+  z-index: 2;
+}
+
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -172,6 +177,27 @@ section[id] {
 
 .hero-content-box p:last-child {
   margin-bottom: 0;
+}
+
+.hero-institutional-mark {
+  width: clamp(190px, 20vw, 330px);
+  margin-left: -1.15rem;
+  margin-bottom: 2rem;
+  opacity: .92;
+  filter: drop-shadow(0 10px 22px rgba(0, 0, 0, .34));
+  pointer-events: none;
+}
+
+.hero-content-box .hero-institutional-mark {
+  width: clamp(210px, 24vw, 360px);
+  margin-left: -1.15rem;
+  margin-bottom: 1.65rem;
+}
+
+.hero-institutional-mark img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .glass-card,
@@ -445,8 +471,9 @@ section[id] {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(5, 12, 24, .92) 0%, rgba(5, 12, 24, .68) 44%, rgba(5, 12, 24, .22) 100%),
-    linear-gradient(180deg, rgba(5, 12, 24, .14), rgba(5, 12, 24, .62));
+    radial-gradient(ellipse at 18% 52%, rgba(5, 12, 24, .64) 0%, rgba(5, 12, 24, .34) 38%, transparent 68%),
+    linear-gradient(90deg, rgba(5, 12, 24, .66) 0%, rgba(5, 12, 24, .32) 44%, rgba(5, 12, 24, .04) 100%),
+    linear-gradient(180deg, rgba(5, 12, 24, .03), rgba(5, 12, 24, .20));
 }
 
 .agent-automation-hero {
@@ -463,11 +490,12 @@ section[id] {
 
 .solution-hero .container {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .solution-hero-copy {
   max-width: 720px;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, .42);
 }
 
 .solution-hero-copy .lead {
@@ -1173,6 +1201,45 @@ section[id] {
   color: rgba(255,255,255,.76);
 }
 
+.site-institutional-footer {
+  background: #07101d;
+  color: rgba(255, 255, 255, .78);
+  padding: 2rem 0 1rem;
+}
+
+.footer-institutional-content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, .12);
+}
+
+.footer-group {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: .35rem;
+}
+
+.footer-institutional-content p:not(.footer-group) {
+  max-width: 520px;
+  margin-bottom: 0;
+}
+
+.footer-school-logo {
+  width: min(360px, 42vw);
+  height: auto;
+  opacity: .9;
+}
+
+.footer-copy {
+  margin: 1rem 0 0;
+  text-align: center;
+  color: rgba(255, 255, 255, .62);
+}
+
 .back-to-top {
   color: #b9ccff;
 }
@@ -1257,6 +1324,21 @@ section[id] {
   .publication-item {
     flex-direction: column;
   }
+
+  .hero-institutional-mark {
+    width: min(48vw, 300px);
+    margin-left: 0;
+    opacity: .86;
+  }
+
+  .footer-institutional-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-school-logo {
+    width: min(320px, 100%);
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -1279,5 +1361,11 @@ section[id] {
 
   .hero-section .display-4 {
     font-size: 2.35rem;
+  }
+
+  .hero-institutional-mark {
+    width: min(76vw, 260px);
+    margin-left: 0;
+    margin-bottom: 1.25rem;
   }
 }
