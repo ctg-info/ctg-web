@@ -39,14 +39,28 @@
     <div class="collapse navbar-collapse" id="navContent">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-        <li class="nav-item"><a class="nav-link" href="#doctoral">PhD</a></li>
-        <li class="nav-item"><a class="nav-link" href="#theses">Master's</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Research
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#research">Areas</a></li>
+            <li><a class="dropdown-item" href="#projects">Projects</a></li>
+            <li><a class="dropdown-item" href="#publications">Publications</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Graduate
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#doctoral">PhD</a></li>
+            <li><a class="dropdown-item" href="#theses">Master's</a></li>
+          </ul>
+        </li>
         <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
       <button id="themeToggle" class="btn btn-sm btn-outline-light theme-toggle ms-lg-3 mt-3 mt-lg-0" type="button" aria-label="Toggle color theme">
@@ -64,8 +78,12 @@
         <img src="assets/img/escuela-logo-white.png" width="260" alt="Universidad Escuela Colombiana de Ingeniería Julio Garavito">
       </div>
       <h1 class="display-4">CTG-Informática</h1>
-      <p class="lead">Research Group in AI, Quantum Computing and Digital Transformation</p>
-      <p>Universidad Escuela Colombiana de Ingeniería Julio Garavito</p>
+      <p class="lead">Research at the frontier of AI, quantum computing, and digital transformation</p>
+      <p>We turn research in intelligent systems, data, software architecture, and cybersecurity into trustworthy digital capabilities.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#research">Explore research</a>
+        <a class="btn btn-outline-light" href="services.html">Consulting services</a>
+      </div>
     </div>
   </div>
 </section>
@@ -105,65 +123,72 @@
 <section id="research" class="py-5 bg-light">
   <div class="container">
     <h2>Research Areas</h2>
-    <ul>
-      <li>Quantum Computing & Computational Theory</li>
-      <li>Artificial Intelligence & Machine Learning</li>
-      <li>Data Management & Smart Territories</li>
-      <li>Software Engineering for AI/ML</li>
-      <li>Digital Transformation</li>
-      <li>Cybersecurity (Emerging Line)</li>
-    </ul>
+    <p class="section-text">Our research connects foundational questions in computing with applied digital transformation challenges in organizations, territories, infrastructure, and society.</p>
+    <div class="solution-row-list">
+      <article class="solution-row compact">
+        <h3>Quantum Computing & Computational Theory</h3>
+        <p>Foundational and experimental work on computational models, quantum algorithms, and the theoretical limits of intelligent systems.</p>
+      </article>
+      <article class="solution-row compact">
+        <h3>Artificial Intelligence & Machine Learning</h3>
+        <p>Research and applied experimentation with learning systems, intelligent decision support, generative AI, and AI-enabled processes.</p>
+      </article>
+      <article class="solution-row compact">
+        <h3>Data Management & Smart Territories</h3>
+        <p>Data governance, analytics, information management, and digital capabilities for smart territories and public-interest systems.</p>
+      </article>
+      <article class="solution-row compact">
+        <h3>Software Engineering for AI/ML</h3>
+        <p>Architecture, reproducibility, software quality, and engineering practices for building reliable AI and data-intensive systems.</p>
+      </article>
+      <article class="solution-row compact">
+        <h3>Digital Transformation</h3>
+        <p>Strategies, platforms, and organizational capabilities that connect emerging technologies with measurable institutional impact.</p>
+      </article>
+      <article class="solution-row compact">
+        <h3>Cybersecurity</h3>
+        <p>An emerging line focused on secure digital systems, risk-aware architectures, software security, and cyber-resilient operations.</p>
+      </article>
+    </div>
+    <div class="research-transfer-note">
+      <p class="solution-eyebrow">Knowledge transfer</p>
+      <h3>Research depth, applied with organizational discipline</h3>
+      <p>Our consulting services translate this research base into practical support for AI adoption, process automation, data, software, cybersecurity, and executive education.</p>
+      <a class="text-link" href="services.html">View consulting services</a>
+    </div>
   </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects" class="py-5">
   <div class="container">
-    <h2>Projects</h2>
+    <h2>Applied Projects & Impact</h2>
+    <p class="section-text">Selected applied projects where CTG-Informática connects research capabilities with institutional, industrial, and public-sector challenges.</p>
     <div class="project-list-simple">
       <article class="project-row">
         <h3>Development and Implementation of the ICT Platform for the Cundinamarca Agro-Industrial Technological Corridor Strategy (CTA-2) (2026)</h3>
         <p>Contracted by the Government of Cundinamarca. Components: (1) Learning Management System (LMS), (2) digital pedagogical content, and (3) a virtual space for service promotion.</p>
+        <p class="project-focus">Focus: public-sector digital platform · learning technologies · agro-industrial services</p>
       </article>
       <article class="project-row">
         <h3>SISVida RAG Platform (2025-2026)</h3>
         <p>AI-assisted platform for auditing and traceability in healthcare claims processes.</p>
+        <p class="project-focus">Focus: RAG · healthcare claims · auditability and traceability</p>
       </article>
       <article class="project-row">
         <h3>El Quimbo Hydropower Oxygenation Optimization (2022-2026)</h3>
         <p>Intelligent control and sustainable technology implementation to improve dissolved oxygen processes in hydropower operations.</p>
+        <p class="project-focus">Focus: intelligent control · hydropower operations · environmental performance</p>
       </article>
       <article class="project-row">
         <h3>Digital Transformation of EMGESA Renewable Generation Plants (2021-2024)</h3>
         <p>Research and development project focused on improving reliability and efficiency in operation, maintenance, and management processes for renewable generation assets.</p>
-      </article>
-      <article class="project-row">
-        <h3>Reproducibility and Knowledge Transfer in Large-Scale Scientific Experiments (2023)</h3>
-        <p>Project on reproducible computational science, distributed infrastructure, and portable execution environments for research workflows.</p>
-      </article>
-      <article class="project-row">
-        <h3>Software Repository Mining with Machine Learning (2022)</h3>
-        <p>Applied research to extract engineering insights from code and issue repositories using data analytics and machine learning methods.</p>
-      </article>
-      <article class="project-row">
-        <h3>New Paradigms for Systems-of-Systems and Smart Cities Architecture (2021-2022)</h3>
-        <p>Research on complex systems design, enterprise architecture, and knowledge-based approaches for large-scale information systems and smart territories.</p>
+        <p class="project-focus">Focus: digital transformation · renewable energy · reliability and maintenance</p>
       </article>
       <article class="project-row">
         <h3>CAP4CITY - Strengthening Governance Capacity for Smart Sustainable Cities (2018-2022)</h3>
         <p>Erasmus+ project with international partners to develop training and governance capabilities for smart sustainable cities.</p>
-      </article>
-      <article class="project-row">
-        <h3>Reactive Middleware for Big Data Processing (2018)</h3>
-        <p>Design and development of reactive programming tools for distributed middleware handling large-scale data processing.</p>
-      </article>
-      <article class="project-row">
-        <h3>Cloud and Mobile Distributed Enterprise Architectures (2017-2018)</h3>
-        <p>Research and prototyping of architectural patterns to support enterprise solutions deployed across distributed cloud and mobile infrastructures.</p>
-      </article>
-      <article class="project-row">
-        <h3>Framework for e-Health and m-Health Service Solutions (2017)</h3>
-        <p>Framework-oriented project to accelerate design and implementation of software-based health service solutions.</p>
+        <p class="project-focus">Focus: smart territories · governance capacity · international collaboration</p>
       </article>
     </div>
   </div>
@@ -173,6 +198,7 @@
 <section id="publications" class="py-5 bg-light">
   <div class="container">
     <h2>Publications (2018-Present)</h2>
+    <p class="section-text">Selected publications and research outputs from 2018 onward, reflecting the group's work across AI, software engineering, digital transformation, data, cybersecurity, and computational theory.</p>
 
     <input type="text" id="publicationFilter" class="form-control mb-3" placeholder="Search publications...">
     <div id="pubList" class="publication-list">
@@ -595,6 +621,7 @@
 <section id="contact" class="py-5 bg-light">
   <div class="container">
     <h2>Contact</h2>
+    <p>Contact us for research collaboration, graduate supervision, applied projects, and consulting or knowledge-transfer initiatives.</p>
     <p>Email: luis.benavides@escuelaing.edu.co</p>
     <p>Faculty of Systems Engineering<br>
     Escuela Colombiana de Ingenieria Julio Garavito<br>

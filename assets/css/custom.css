@@ -180,6 +180,13 @@ section[id] {
   margin-bottom: 0;
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 1.25rem;
+}
+
 .hero-institutional-mark {
   width: clamp(190px, 20vw, 330px);
   margin-left: -1.15rem;
@@ -1056,6 +1063,23 @@ section[id] {
   margin: 0;
 }
 
+.research-transfer-note {
+  margin-top: 1.8rem;
+  padding: 1.4rem 0 0 1.25rem;
+  border-top: 1px solid var(--line);
+  border-left: 3px solid var(--primary);
+}
+
+.research-transfer-note h3 {
+  font-size: 1.15rem;
+  margin-bottom: .45rem;
+}
+
+.research-transfer-note p {
+  color: var(--text-soft);
+  line-height: 1.7;
+}
+
 /* Projects as list (no cards) */
 #projects .project-list-simple {
   display: block;
@@ -1078,6 +1102,13 @@ section[id] {
 #projects .project-row p {
   margin: 0;
   color: var(--text-soft);
+}
+
+#projects .project-row .project-focus {
+  margin-top: .45rem;
+  font-size: .92rem;
+  letter-spacing: .01em;
+  color: var(--primary);
 }
 
 .team-photo {
